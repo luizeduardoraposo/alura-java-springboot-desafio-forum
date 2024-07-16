@@ -1,4 +1,4 @@
-package com.qingwenwei.service.impl;
+package com.alura.java.service.impl;
 
 import java.time.Month;
 import java.time.format.TextStyle;
@@ -9,20 +9,20 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 
+import com.alura.java.persistence.dao.CategoryMapper;
+import com.alura.java.persistence.dao.PostMapper;
+import com.alura.java.persistence.dao.UserMapper;
+import com.alura.java.persistence.model.Category;
+import com.alura.java.persistence.model.Post;
+import com.alura.java.persistence.model.User;
+import com.alura.java.web.dto.PostDto;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.qingwenwei.persistence.dao.CategoryMapper;
-import com.qingwenwei.persistence.dao.PostMapper;
-import com.qingwenwei.persistence.dao.UserMapper;
-import com.qingwenwei.persistence.model.Category;
-import com.qingwenwei.persistence.model.Post;
-import com.qingwenwei.persistence.model.User;
-import com.qingwenwei.service.DashboardService;
-import com.qingwenwei.web.dto.PostDto;
+import com.alura.java.service.DashboardService;
 
 @Service("dashboardService")
 @Transactional
@@ -50,7 +50,7 @@ public class DashboardServiceImpl implements DashboardService {
 			attributes.put("stats", null);
 			break;
 		case "posts":
-			List<Post> posts = this.postMapper.findPostsBetweenRange(startDate + " 00:00:00", 
+			List<Post> posts = this.postMapper.findPostsBetweenRange(startDate + " 00:00:00",
 					endDate + " 23:59:59");
 			attributes.put("posts", posts);
 			break;

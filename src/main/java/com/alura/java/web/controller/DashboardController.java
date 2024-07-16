@@ -1,9 +1,14 @@
-package com.qingwenwei.web.controller;
+package com.alura.java.web.controller;
 
 import java.util.Map;
 
 import javax.validation.Valid;
 
+import com.alura.java.exception.BadRequestException;
+import com.alura.java.exception.ResourceNotFoundException;
+import com.alura.java.service.DashboardService;
+import com.alura.java.service.PostService;
+import com.alura.java.web.dto.PostDto;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,12 +24,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
-
-import com.qingwenwei.exception.BadRequestException;
-import com.qingwenwei.exception.ResourceNotFoundException;
-import com.qingwenwei.service.DashboardService;
-import com.qingwenwei.service.PostService;
-import com.qingwenwei.web.dto.PostDto;
 
 @Controller
 public class DashboardController {

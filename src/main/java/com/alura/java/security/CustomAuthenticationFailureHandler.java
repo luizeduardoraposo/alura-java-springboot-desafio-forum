@@ -1,4 +1,4 @@
-package com.qingwenwei.security;
+package com.alura.java.security;
 
 import java.io.IOException;
 import java.util.Locale;

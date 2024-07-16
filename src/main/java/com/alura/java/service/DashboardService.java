@@ -1,8 +1,8 @@
-package com.qingwenwei.service;
+package com.alura.java.service;
 
 import java.util.Map;
 
-import com.qingwenwei.web.dto.PostDto;
+import com.alura.java.web.dto.PostDto;
 
 public interface DashboardService {
 
