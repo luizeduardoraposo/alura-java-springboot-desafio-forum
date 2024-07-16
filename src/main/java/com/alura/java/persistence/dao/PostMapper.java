@@ -1,11 +1,10 @@
-package com.qingwenwei.persistence.dao;
+package com.alura.java.persistence.dao;
 
 import java.util.List;
 
+import com.alura.java.persistence.model.Post;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
-
-import com.qingwenwei.persistence.model.Post;
 
 @Mapper
 public interface PostMapper {
