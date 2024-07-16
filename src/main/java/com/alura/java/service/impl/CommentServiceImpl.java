@@ -1,20 +1,20 @@
-package com.qingwenwei.service.impl;
+package com.alura.java.service.impl;
 
 import java.sql.Timestamp;
 
+import com.alura.java.persistence.dao.CommentMapper;
+import com.alura.java.persistence.dao.PostMapper;
+import com.alura.java.persistence.dao.UserMapper;
+import com.alura.java.persistence.model.Comment;
+import com.alura.java.persistence.model.Post;
+import com.alura.java.persistence.model.User;
+import com.alura.java.web.dto.CommentDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 
-import com.qingwenwei.persistence.dao.CommentMapper;
-import com.qingwenwei.persistence.dao.PostMapper;
-import com.qingwenwei.persistence.dao.UserMapper;
-import com.qingwenwei.persistence.model.Comment;
-import com.qingwenwei.persistence.model.Post;
-import com.qingwenwei.persistence.model.User;
-import com.qingwenwei.service.CommentService;
-import com.qingwenwei.web.dto.CommentDto;
+import com.alura.java.service.CommentService;
 
 @Service("commentService")
 public class CommentServiceImpl implements CommentService {

@@ -1,4 +1,4 @@
-package com.qingwenwei.web.dto;
+package com.alura.java.web.dto;
 
 public class CommentDto {
 

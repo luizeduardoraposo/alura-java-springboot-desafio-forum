@@ -1,7 +1,7 @@
-package com.qingwenwei.service;
+package com.alura.java.service;
 
-import com.qingwenwei.persistence.model.Comment;
-import com.qingwenwei.web.dto.CommentDto;
+import com.alura.java.persistence.model.Comment;
+import com.alura.java.web.dto.CommentDto;
 
 public interface CommentService {
 
