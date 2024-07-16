@@ -1,10 +1,9 @@
-package com.qingwenwei.persistence.dao;
+package com.alura.java.persistence.dao;
 
 import java.util.List;
 
+import com.alura.java.persistence.model.User;
 import org.apache.ibatis.annotations.Mapper;
-
-import com.qingwenwei.persistence.model.User;
 
 @Mapper
 public interface UserMapper {

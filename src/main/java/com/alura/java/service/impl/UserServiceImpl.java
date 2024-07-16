@@ -1,4 +1,4 @@
-package com.qingwenwei.service.impl;
+package com.alura.java.service.impl;
 
 import java.sql.Timestamp;
 import java.util.HashMap;
@@ -8,6 +8,14 @@ import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 
+import com.alura.java.persistence.dao.CommentMapper;
+import com.alura.java.persistence.dao.PostMapper;
+import com.alura.java.persistence.dao.UserMapper;
+import com.alura.java.persistence.dao.VerificationTokenMapper;
+import com.alura.java.persistence.model.Comment;
+import com.alura.java.persistence.model.Post;
+import com.alura.java.persistence.model.User;
+import com.alura.java.persistence.model.VerificationToken;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,19 +25,11 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import com.qingwenwei.event.OnRegistrationCompleteEvent;
-import com.qingwenwei.persistence.dao.CommentMapper;
-import com.qingwenwei.persistence.dao.PostMapper;
-import com.qingwenwei.persistence.dao.UserMapper;
-import com.qingwenwei.persistence.dao.VerificationTokenMapper;
-import com.qingwenwei.persistence.model.Comment;
-import com.qingwenwei.persistence.model.Post;
-import com.qingwenwei.persistence.model.User;
-import com.qingwenwei.persistence.model.VerificationToken;
-import com.qingwenwei.service.StorageService;
-import com.qingwenwei.service.UserService;
-import com.qingwenwei.web.dto.UserRegistrationDto;
-import com.qingwenwei.web.dto.UserSettingsDto;
+import com.alura.java.event.OnRegistrationCompleteEvent;
+import com.alura.java.service.StorageService;
+import com.alura.java.service.UserService;
+import com.alura.java.web.dto.UserRegistrationDto;
+import com.alura.java.web.dto.UserSettingsDto;
 
 @Service("userService")
 public class UserServiceImpl implements UserService {

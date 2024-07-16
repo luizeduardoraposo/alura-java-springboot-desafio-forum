@@ -1,4 +1,4 @@
-package com.qingwenwei.util;
+package com.alura.java.util;
 
 import java.sql.Date;
 import java.sql.Timestamp;

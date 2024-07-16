@@ -1,12 +1,12 @@
-package com.qingwenwei.service;
+package com.alura.java.service;
 
 import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 
-import com.qingwenwei.persistence.model.User;
-import com.qingwenwei.web.dto.UserRegistrationDto;
-import com.qingwenwei.web.dto.UserSettingsDto;
+import com.alura.java.persistence.model.User;
+import com.alura.java.web.dto.UserRegistrationDto;
+import com.alura.java.web.dto.UserSettingsDto;
 
 public interface UserService {
 

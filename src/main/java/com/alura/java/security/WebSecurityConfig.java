@@ -1,4 +1,4 @@
-package com.qingwenwei.security;
+package com.alura.java.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;

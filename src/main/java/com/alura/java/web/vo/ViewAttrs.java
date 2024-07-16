@@ -1,4 +1,4 @@
-package com.qingwenwei.web.vo;
+package com.alura.java.web.vo;
 
 import java.util.Collection;
 import java.util.HashMap;

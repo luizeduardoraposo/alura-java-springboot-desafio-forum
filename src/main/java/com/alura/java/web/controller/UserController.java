@@ -1,9 +1,13 @@
-package com.qingwenwei.web.controller;
+package com.alura.java.web.controller;
 
 import java.util.Map;
 
 import javax.validation.Valid;
 
+import com.alura.java.exception.BadRequestException;
+import com.alura.java.exception.ResourceNotFoundException;
+import com.alura.java.service.UserService;
+import com.alura.java.util.NewUserFormValidator;
 import org.apache.catalina.servlet4preview.http.HttpServletRequest;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -17,12 +21,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.qingwenwei.exception.BadRequestException;
-import com.qingwenwei.exception.ResourceNotFoundException;
-import com.qingwenwei.service.UserService;
-import com.qingwenwei.util.NewUserFormValidator;
-import com.qingwenwei.web.dto.UserRegistrationDto;
-import com.qingwenwei.web.dto.UserSettingsDto;
+import com.alura.java.web.dto.UserRegistrationDto;
+import com.alura.java.web.dto.UserSettingsDto;
 
 @Controller
 public class UserController {

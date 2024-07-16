@@ -1,4 +1,4 @@
-package com.qingwenwei.web.dto;
+package com.alura.java.web.dto;
 
 import org.springframework.web.multipart.MultipartFile;
 
