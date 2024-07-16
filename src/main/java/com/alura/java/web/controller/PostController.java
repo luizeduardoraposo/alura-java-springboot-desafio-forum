@@ -1,9 +1,19 @@
-package com.qingwenwei.web.controller;
+package com.alura.java.web.controller;
 
 import java.util.Map;
 
 import javax.validation.Valid;
 
+import com.alura.java.exception.BadRequestException;
+import com.alura.java.exception.ResourceNotFoundException;
+import com.alura.java.persistence.model.Comment;
+import com.alura.java.persistence.model.Post;
+import com.alura.java.service.CategoryService;
+import com.alura.java.service.CommentService;
+import com.alura.java.service.PostService;
+import com.alura.java.util.NewPostFormValidator;
+import com.alura.java.web.dto.CommentDto;
+import com.alura.java.web.dto.PostDto;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,17 +25,6 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-
-import com.qingwenwei.exception.BadRequestException;
-import com.qingwenwei.exception.ResourceNotFoundException;
-import com.qingwenwei.persistence.model.Comment;
-import com.qingwenwei.persistence.model.Post;
-import com.qingwenwei.service.CategoryService;
-import com.qingwenwei.service.CommentService;
-import com.qingwenwei.service.PostService;
-import com.qingwenwei.util.NewPostFormValidator;
-import com.qingwenwei.web.dto.CommentDto;
-import com.qingwenwei.web.dto.PostDto;
 
 @Controller
 public class PostController {
@@ -95,7 +94,7 @@ public class PostController {
 
 	@RequestMapping(value = "/new", method = RequestMethod.POST)
 	public String processNewPost(@Valid @ModelAttribute("postDto") PostDto postDto, BindingResult bindingResult,
-			Model model) {
+                                 Model model) {
 		if (null == postDto) {
 			throw new BadRequestException("NewPostForm cound not be null.");
 		}

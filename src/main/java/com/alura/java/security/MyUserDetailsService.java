@@ -1,16 +1,16 @@
-package com.qingwenwei.security;
+package com.alura.java.security;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import com.alura.java.persistence.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 
-import com.qingwenwei.persistence.model.User;
-import com.qingwenwei.service.UserService;
+import com.alura.java.service.UserService;
 
 public class MyUserDetailsService implements UserDetailsService {
 

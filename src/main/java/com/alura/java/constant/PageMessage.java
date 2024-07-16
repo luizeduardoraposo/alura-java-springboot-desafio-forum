@@ -1,4 +1,4 @@
-package com.qingwenwei.constant;
+package com.alura.java.constant;
 
 public class PageMessage {
 	public static String MESSAGE_NEW_POST_CN = "新帖子";

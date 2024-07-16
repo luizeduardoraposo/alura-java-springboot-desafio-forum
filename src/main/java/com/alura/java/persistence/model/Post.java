@@ -1,9 +1,9 @@
-package com.qingwenwei.persistence.model;
+package com.alura.java.persistence.model;
 
 import java.io.Serializable;
 import java.sql.Timestamp;
 
-import com.qingwenwei.util.TimeUtil;
+import com.alura.java.util.TimeUtil;
 
 public class Post implements Serializable {
 

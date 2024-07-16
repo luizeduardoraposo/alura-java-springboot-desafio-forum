@@ -1,11 +1,10 @@
-package com.qingwenwei.util;
+package com.alura.java.util;
 
+import com.alura.java.persistence.model.Post;
 import org.springframework.stereotype.Component;
 import org.springframework.validation.Errors;
 import org.springframework.validation.ValidationUtils;
 import org.springframework.validation.Validator;
-
-import com.qingwenwei.persistence.model.Post;
 
 @Component
 public class NewPostFormValidator implements Validator {

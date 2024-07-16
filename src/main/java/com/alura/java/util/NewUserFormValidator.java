@@ -1,17 +1,17 @@
-package com.qingwenwei.util;
+package com.alura.java.util;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import com.alura.java.persistence.model.User;
+import com.alura.java.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.validation.Errors;
 import org.springframework.validation.ValidationUtils;
 import org.springframework.validation.Validator;
 
-import com.qingwenwei.persistence.model.User;
-import com.qingwenwei.service.UserService;
-import com.qingwenwei.web.dto.UserRegistrationDto;
+import com.alura.java.web.dto.UserRegistrationDto;
 
 @Component
 public class NewUserFormValidator implements Validator {

@@ -1,4 +1,4 @@
-package com.qingwenwei.event;
+package com.alura.java.event;
 
 import java.util.Locale;
 
