@@ -1,4 +1,4 @@
-package com.qingwenwei.persistence.model;
+package com.alura.java.persistence.model;
 
 import java.io.Serializable;
 import java.sql.Timestamp;

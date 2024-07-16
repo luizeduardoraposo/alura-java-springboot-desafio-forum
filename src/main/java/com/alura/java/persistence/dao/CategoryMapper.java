@@ -1,10 +1,9 @@
-package com.qingwenwei.persistence.dao;
+package com.alura.java.persistence.dao;
 
 import java.util.List;
 
+import com.alura.java.persistence.model.Category;
 import org.apache.ibatis.annotations.Mapper;
-
-import com.qingwenwei.persistence.model.Category;
 
 @Mapper
 public interface CategoryMapper {

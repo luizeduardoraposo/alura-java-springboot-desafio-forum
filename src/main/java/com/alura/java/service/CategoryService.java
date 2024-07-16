@@ -1,9 +1,9 @@
-package com.qingwenwei.service;
+package com.alura.java.service;
 
 import java.util.List;
 import java.util.Map;
 
-import com.qingwenwei.persistence.model.Category;
+import com.alura.java.persistence.model.Category;
 
 public interface CategoryService {
 

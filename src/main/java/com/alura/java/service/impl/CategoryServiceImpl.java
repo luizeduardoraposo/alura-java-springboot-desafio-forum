@@ -1,17 +1,17 @@
-package com.qingwenwei.service.impl;
+package com.alura.java.service.impl;
 
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import com.alura.java.constant.PageMessage;
+import com.alura.java.persistence.dao.CategoryMapper;
+import com.alura.java.persistence.model.Category;
+import com.alura.java.web.dto.PostDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.qingwenwei.constant.PageMessage;
-import com.qingwenwei.persistence.dao.CategoryMapper;
-import com.qingwenwei.persistence.model.Category;
-import com.qingwenwei.service.CategoryService;
-import com.qingwenwei.web.dto.PostDto;
+import com.alura.java.service.CategoryService;
 
 @Service("categoryService")
 public class CategoryServiceImpl implements CategoryService {
