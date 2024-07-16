@@ -1,8 +1,7 @@
-package com.qingwenwei.service;
+package com.alura.java.service;
 
+import com.alura.java.persistence.model.User;
 import org.springframework.web.multipart.MultipartFile;
-
-import com.qingwenwei.persistence.model.User;
 
 public interface StorageService {
 

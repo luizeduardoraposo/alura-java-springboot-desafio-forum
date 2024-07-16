@@ -1,10 +1,13 @@
-package com.qingwenwei.service.impl;
+package com.alura.java.service.impl;
 
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
 
+import com.alura.java.exception.StorageException;
+import com.alura.java.persistence.dao.UserMapper;
+import com.alura.java.persistence.model.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,10 +16,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.qingwenwei.exception.StorageException;
-import com.qingwenwei.persistence.dao.UserMapper;
-import com.qingwenwei.persistence.model.User;
-import com.qingwenwei.service.StorageService;
+import com.alura.java.service.StorageService;
 
 @Service("storageService")
 public class StorageServiceImpl implements StorageService {
