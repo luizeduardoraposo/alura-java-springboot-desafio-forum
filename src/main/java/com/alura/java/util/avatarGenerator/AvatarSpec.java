@@ -1,4 +1,4 @@
-package com.qingwenwei.util.avatarGenerator;
+package com.alura.java.util.avatarGenerator;
 
 import java.awt.Color;
 
