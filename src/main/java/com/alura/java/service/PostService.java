@@ -1,9 +1,9 @@
-package com.qingwenwei.service;
+package com.alura.java.service;
 
 import java.util.Map;
 
-import com.qingwenwei.persistence.model.Post;
-import com.qingwenwei.web.dto.PostDto;
+import com.alura.java.persistence.model.Post;
+import com.alura.java.web.dto.PostDto;
 
 public interface PostService {
 
