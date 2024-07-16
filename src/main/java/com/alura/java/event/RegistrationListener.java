@@ -1,7 +1,11 @@
-package com.qingwenwei.event;
+package com.alura.java.event;
 
 import java.util.UUID;
 
+import com.alura.java.persistence.dao.UserMapper;
+import com.alura.java.persistence.dao.VerificationTokenMapper;
+import com.alura.java.persistence.model.User;
+import com.alura.java.persistence.model.VerificationToken;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,11 +14,7 @@ import org.springframework.context.ApplicationListener;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.stereotype.Component;
 
-import com.qingwenwei.persistence.dao.UserMapper;
-import com.qingwenwei.persistence.dao.VerificationTokenMapper;
-import com.qingwenwei.persistence.model.User;
-import com.qingwenwei.persistence.model.VerificationToken;
-import com.qingwenwei.util.EmailService;
+import com.alura.java.util.EmailService;
 
 @Component
 public class RegistrationListener implements ApplicationListener<OnRegistrationCompleteEvent> {
