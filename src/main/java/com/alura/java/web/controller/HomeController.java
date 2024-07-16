@@ -1,15 +1,14 @@
-package com.qingwenwei.web.controller;
+package com.alura.java.web.controller;
 
 import java.util.Map;
 
+import com.alura.java.service.PostService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
-
-import com.qingwenwei.service.PostService;
 
 @Controller
 public class HomeController {

@@ -1,4 +1,4 @@
-package com.qingwenwei.util;
+package com.alura.java.util;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.SimpleMailMessage;
