@@ -1,4 +1,4 @@
-package com.qingwenwei.config;
+package com.alura.java.config;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;

@@ -1,4 +1,4 @@
-package com.qingwenwei;
+package com.alura.java;
 
 import java.util.Locale;
 
@@ -11,7 +11,7 @@ import org.springframework.web.servlet.i18n.SessionLocaleResolver;
 
 // 也可以在配置类上用这个注解来扫描所有的mapper文件
 // 但本项目本着学习的原则，选择在每一个mapper类上添加@mapper注解
-//@MapperScan("com.qingwenwei.persistence.dao")
+//@MapperScan("com.alura.persistence.dao")
 @EnableAsync
 @SpringBootApplication
 public class SpringBootForumApplication {
@@ -23,7 +23,7 @@ public class SpringBootForumApplication {
 	@Bean
 	public LocaleResolver localeResolver() {
 		SessionLocaleResolver sessionLocaleResolver = new SessionLocaleResolver();
-		sessionLocaleResolver.setDefaultLocale(Locale.CHINA);
+		sessionLocaleResolver.setDefaultLocale(Locale.ENGLISH);
 		return sessionLocaleResolver;
 	}
 

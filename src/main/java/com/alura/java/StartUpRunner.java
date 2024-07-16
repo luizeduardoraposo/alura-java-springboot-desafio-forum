@@ -1,4 +1,4 @@
-package com.qingwenwei;
+package com.alura.java;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;

@@ -1,4 +1,4 @@
-package com.qingwenwei;
+package com.alura.java;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

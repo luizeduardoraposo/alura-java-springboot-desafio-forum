@@ -1,4 +1,4 @@
-package com.qingwenwei.exception;
+package com.alura.java.exception;
 
 public class StorageException extends RuntimeException {
 
