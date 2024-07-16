@@ -1,10 +1,21 @@
-package com.qingwenwei.service.impl;
+package com.alura.java.service.impl;
 
 import java.sql.Timestamp;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import com.alura.java.constant.PageMessage;
+import com.alura.java.persistence.dao.CategoryMapper;
+import com.alura.java.persistence.dao.CommentMapper;
+import com.alura.java.persistence.dao.PostMapper;
+import com.alura.java.persistence.dao.UserMapper;
+import com.alura.java.persistence.model.Category;
+import com.alura.java.persistence.model.Comment;
+import com.alura.java.persistence.model.Post;
+import com.alura.java.persistence.model.User;
+import com.alura.java.web.dto.CommentDto;
+import com.alura.java.web.dto.PostDto;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,18 +26,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import com.qingwenwei.constant.PageMessage;
-import com.qingwenwei.persistence.dao.CategoryMapper;
-import com.qingwenwei.persistence.dao.CommentMapper;
-import com.qingwenwei.persistence.dao.PostMapper;
-import com.qingwenwei.persistence.dao.UserMapper;
-import com.qingwenwei.persistence.model.Category;
-import com.qingwenwei.persistence.model.Comment;
-import com.qingwenwei.persistence.model.Post;
-import com.qingwenwei.persistence.model.User;
-import com.qingwenwei.service.PostService;
-import com.qingwenwei.web.dto.CommentDto;
-import com.qingwenwei.web.dto.PostDto;
+import com.alura.java.service.PostService;
 
 @Service("postService")
 @Transactional
